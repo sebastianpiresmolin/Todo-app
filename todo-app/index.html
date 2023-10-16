@@ -1,0 +1,67 @@
+<!--
+Inlämningsuppgift
+
+Skapa en webbapplikation för ToDo som innehåller HTML, CSS och JavaScript.
+
+Skriva in en uppgift i ett <input>-fält - Done 
+Klicka på en knapp för att lägga till uppgiften i en lista som en <li> - Done
+Om man klickar på knappen när fältet är tomt ska man få ett meddelande
+som säger att man måste skriva något. - Done
+Klicka på en uppgift <li> i listan för att markera den som klar (sätta class så
+att den stylas annorlunda) Uppdatera en liten etikett någonstans med antal
+uppgifter som man gjort klart. - Done
+
+Uppgifterna som syns i HTML ska även lagras/hanteras i en array med objekt i
+JavaScript.
+
+Uppgiften ska redovisas som en länk till ett repo på GitHub.
+
+För G ska samtliga ovan punkter uppfyllas med en fungerande webbapplikation.
+
+För VG ska förutom G-kraven följande uppfyllas:
+
+Klicka på en <li> som markerats som färdig igen för att markera den som ofärdig
+(kräver conditionals) Klicka på en liten papperskorg på varje rad för att radera
+den uppgiften ur listan
+
+Webbapplikationen ska publiceras på GitHub pages.
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Work Efficiancy Booster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body class="container">
+    <h1>My ToDo</h1>
+    <p id="completedTodosCount"></p>
+
+    <div class="main">
+      <form>
+        <input id="input" type="text" placeholder="" />
+      <button id="submitButton" type="submit">OK</button>
+      </form>
+      
+      <div class="todoList">
+        <span id="errorText" class="error-text"></span>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+  </body>
+</html>
