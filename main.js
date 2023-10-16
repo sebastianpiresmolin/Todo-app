@@ -27,8 +27,8 @@ function handleSubmitForm(e) {
         errorText.textContent = 'Input must not be empty'; // Display the error message
         errorText.classList.add('flash-three-times'); // Add the flashing animation class
         setTimeout(() => {
-            errorText.classList.remove('flash-three-times'); // Remove the animation class after flashing
-        }, 900); // Adjust the timing to match your animation duration and repetition
+            errorText.classList.remove('flash-three-times'); 
+        }, 900);
     }
 }
 
@@ -39,12 +39,10 @@ function handleClickDeleteOrCheck(e) {
     const listItem = e.target.closest('li');
     
     if (listItem) {
-        // A parent 'li' element was found
+        //parent 'li' element
         const spanElement = listItem.querySelector('span');
         if (e.target === spanElement) {
             // Handle the click on the 'span' element
-            // You can access the 'span' element using spanElement
-            // Example: spanElement.classList.add('clicked');
         }
         else if (e.target.name === 'deleteButton') {
             deleteTodo(e);
@@ -125,7 +123,3 @@ function deleteTodo(e) {
     item.remove();
 }
 
-/*
-If this project were to be used in a real life setting I would implement
-localStorage so that the data isnt wiped every refresh
-*/
