@@ -60,7 +60,7 @@ function addTodo(todo) {
 
     li.innerHTML = `
         <span class="todo-item">${todo}</span>
-        <button name="deleteButton"><i class="fas fa-trash"></i></button>
+        <button name="deleteButton"><i class="fa fa-trash"></i></button>
     `;
     li.classList.add('todo-list-item');
     ul.appendChild(li);
