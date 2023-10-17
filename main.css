@@ -169,12 +169,15 @@ li {
   width: fit-content;
   color: black;
   overflow-wrap: anywhere;
+  transition: color 0.5s;
 }
 
 li:hover {
   text-decoration: line-through;
   cursor: pointer;
 }
+
+
 
 .todo-list-item {
   animation: riseFromBelow 0.2s ease;
@@ -186,8 +189,13 @@ li button {
   border: 0;
 }
 
+li button:hover{
+  cursor: pointer;
+}
+
 .todo-item {
   flex-grow: 1;
+  padding: 0;
 }
 
 
@@ -212,4 +220,9 @@ i {
 }
 .todoList {
   margin-top: -20px;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }

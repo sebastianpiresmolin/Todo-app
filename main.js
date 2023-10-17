@@ -81,19 +81,18 @@ document.querySelector('#todoList').addEventListener('click', function (e) {
     if (e.target.tagName === 'SPAN') {
         const listItem = e.target.closest('li');
         if (listItem) {
-            if (listItem.style.textDecoration === 'line-through') {
-                listItem.style.textDecoration = 'none';
-                listItem.style.color = 'black';
+            if (listItem.classList.contains('completed')) {
+                listItem.classList.remove('completed');
                 completedTodos--;
             } else {
-                listItem.style.textDecoration = 'line-through';
-                listItem.style.color = 'gray';
+                listItem.classList.add('completed');
                 completedTodos++;
             }
             updateCompletedTodosCount();
         }
     }
 });
+
 
 // Function to update and display completed todos count
 function updateCompletedTodosCount() {
