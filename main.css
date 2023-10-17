@@ -23,6 +23,7 @@ html {
 
 @keyframes fadeIn {
   0% {opacity: 0;}
+  70% {opacity: 0;}
   100% {opacity: 1;}
   } 
 
@@ -75,7 +76,7 @@ html {
   font-size: 50px;
   margin: 0;
   margin-top: 15px;
-  animation: fadeIn 2s ease;
+  animation: fadeIn 1s ease;
 }
 
 
@@ -95,7 +96,7 @@ form {
     align-items: center;
     flex-basis: 100%;
     padding-bottom: 30px;
-    animation: fadeIn 2s ease;
+    animation: fadeIn 1s ease;
 }
 
 input[type="text"] {
@@ -110,7 +111,7 @@ input[type="text"] {
   border: 2px solid gray;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  animation: fadeIn 2.5s ease;
+  animation: fadeIn 1s ease;
   
 }
 
@@ -127,7 +128,7 @@ button {
   color: black;
   font-weight: 600;
   padding: 0;
-  animation: fadeIn 2.5s ease;
+  animation: fadeIn 1s ease;
 }
 
 
@@ -207,14 +208,14 @@ i {
 #counter {
   color: black;
   font-size: 15px;
-  animation: fadeIn 2.5s ease;
+  animation: fadeIn 1s ease;
 }
 
 #completedTodosCount {
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   padding-right: 15px;
-  animation: fadeIn 2.5s ease;
+  animation: fadeIn 1s ease;
 }
 .error-text {
   color: red;
