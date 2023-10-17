@@ -9,10 +9,10 @@ html {
 
 @keyframes dropAndBounce {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-70%);
   }
   50% {
-    transform: translateY(20%);
+    transform: translateY(30%);
   }
 
 
