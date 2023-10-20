@@ -1,7 +1,14 @@
 html {
   height: 100%;
   min-width: 600px;
-  background-image: linear-gradient(to top, #f08080, #f48e8d, #f89c9a, #fca9a8, #ffb7b5);
+  background-image: linear-gradient(
+    to top,
+    #f08080,
+    #f48e8d,
+    #f89c9a,
+    #fca9a8,
+    #ffb7b5
+  );
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -15,17 +22,22 @@ html {
     transform: translateY(30%);
   }
 
-
   100% {
     transform: translateY(0);
   }
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  70% {opacity: 0;}
-  100% {opacity: 1;}
-  } 
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes riseFromBelow {
   0% {
@@ -39,10 +51,18 @@ html {
 }
 
 @keyframes flashErrorText {
-  0%, 20%, 40%, 60%, 80% {
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
     opacity: 1;
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     opacity: 0;
   }
 }
@@ -50,9 +70,6 @@ html {
 .flash-three-times {
   animation: flashErrorText 1.5s 3;
 }
-
-
-
 
 .container {
   width: 500px;
@@ -66,9 +83,9 @@ html {
   margin-top: 10px;
   animation: dropAndBounce 0.7s ease;
   border-radius: 3px;
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container h1 {
@@ -79,9 +96,6 @@ html {
   animation: fadeIn 1s ease;
 }
 
-
-
-
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -89,14 +103,14 @@ html {
 }
 
 form {
-    background-color: #ffffff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
-    padding-bottom: 30px;
-    animation: fadeIn 1s ease;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  padding-bottom: 30px;
+  animation: fadeIn 1s ease;
 }
 
 input[type="text"] {
@@ -112,7 +126,6 @@ input[type="text"] {
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   animation: fadeIn 1s ease;
-  
 }
 
 input[type="text"]:focus {
@@ -130,20 +143,14 @@ button {
   padding: 0;
 }
 
-
-
-
-
 .todoList {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   margin-top: 20px;
   padding: 10px, 25px;
   height: 100%;
   margin-top: -20px;
 }
-
-
 
 .todo-list-item {
   padding-left: 10px;
@@ -176,10 +183,6 @@ li {
   transition: color 0.5s;
 }
 
-
-
-
-
 .todo-list-item {
   animation: riseFromBelow 0.2s ease;
 }
@@ -187,7 +190,6 @@ li {
   flex-grow: 1;
   padding: 0;
 }
-
 
 li:hover {
   text-decoration: line-through;
@@ -200,12 +202,9 @@ li button {
   border: 0;
 }
 
-li button:hover{
+li button:hover {
   cursor: pointer;
 }
-
-
-
 
 i {
   pointer-events: none;
@@ -228,7 +227,6 @@ i {
   height: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .completed {
   color: gray;
